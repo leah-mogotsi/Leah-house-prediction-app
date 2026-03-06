@@ -21,7 +21,7 @@ st.markdown("""
 
 /* Make main content container slightly transparent */
 .block-container{
-    background-color: rgba(0, 0, 0, 0.6); /* darker and transparent */
+    background-color: rgba(0, 0, 0, 1); /* darker and transparent */
     padding: 2rem;
     border-radius: 15px;
 }
