@@ -54,7 +54,7 @@ h1, h2, h3, p, label, .stTextInput, .stSelectbox {
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🏠 House Price Prediction App")
+st.title("House Price Prediction App")
 st.write("Enter the house details below to estimate the price.")
 
 st.divider()
@@ -82,7 +82,7 @@ with col4:
 
 st.divider()
 
-if st.button("🔮 Predict Price"):
+if st.button("Predict Price"):
     features = np.array([[area, bedrooms, bathrooms, stories,
                           1 if mainroad=="yes" else 0,
                           1 if guestroom=="yes" else 0,
