@@ -16,14 +16,15 @@ st.markdown("""
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(0.2); /* 60% brightness for fade effect */
+    filter: brightness(0.6); /* 60% brightness for fade effect */
 }
 
 /* Make main content container slightly transparent */
 .block-container{
-    background-color: #ffffff; 
+    background-color: rgba(255, 255, 255, 0.9); /* slightly transparent white */
     padding: 2rem;
     border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
 }
 
 /* Button styling */
