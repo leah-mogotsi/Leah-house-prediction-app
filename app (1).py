@@ -16,12 +16,12 @@ st.markdown("""
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(0.6); /* 60% brightness for fade effect */
+    filter: brightness(0.9); /* 60% brightness for fade effect */
 }
 
 /* Make main content container slightly transparent */
 .block-container{
-    background-color: rgba(0, 0, 0, 1); /* darker and transparent */
+    background-color: rgba(0, 0, 0, 0.3); /* darker and transparent */
     padding: 2rem;
     border-radius: 15px;
 }
@@ -45,7 +45,7 @@ div.stButton > button {
 }
 
 /* General text color and main body font size */
-h2, h3, p, label, .stTextInput, .stSelectbox {
+h1, h2, h3, p, label, .stTextInput, .stSelectbox {
     color: white !important;
     font-size: 18px; /* Increase main body text size */
 }
