@@ -5,8 +5,6 @@ import numpy as np
 
 model = joblib.load("house_model.pkl")
 
-st.image("https://images.unsplash.com/photo-1600585154340-be6161a56a0c", use_column_width=True)
-
 st.set_page_config(page_title="House Price Predictor", page_icon="🏠", layout="centered")
 
 st.markdown("""
@@ -40,7 +38,7 @@ def add_bg():
         """
         <style>
         .stApp {
-            background-image: url("https://images.unsplash.com/photo-1560518883-ce09059eeffa");
+            background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -101,5 +99,5 @@ if st.button("🔮 Predict Price"):
 
     prediction = model.predict(features)
 
-    st.success(f"💰 Estimated House Price: {prediction[0]:,.2f}")
+    st.success(f"💰 Estimated House Price:P {prediction[0]:,.2f}")
     
