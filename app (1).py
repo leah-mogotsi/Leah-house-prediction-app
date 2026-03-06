@@ -46,7 +46,7 @@ h1, h2, h3, p, label, .stTextInput, .stSelectbox {
 
 /* Predicted price box styling */
 .stAlert {
-    background-color: black !important;
+    background-color:#2E86C1  !important;
     color: white !important;
     font-size: 20px !important;
 }
