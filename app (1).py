@@ -16,21 +16,20 @@ st.markdown("""
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(0.6); /* 60% brightness for fade effect */
 }
 
 /* Make main content container slightly transparent */
 .block-container{
-    background-color: rgba(255, 255, 255, 0.9); /* slightly transparent white */
+    background-color: rgba(255, 255, 255, 0.95); /* slightly transparent white */
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* subtle shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
 /* Button styling */
 div.stButton > button {
     background-color: #2E86C1;
-    color: black;
+    color: white;
     border-radius: 10px;
     height: 3em;
     width: 100%;
@@ -48,14 +47,15 @@ div.stButton > button {
 /* General text color and main body font size */
 h1, h2, h3, p, label, .stTextInput, .stSelectbox {
     color: black !important;
-    font-size: 18px; /* Increase main body text size */
+    font-size: 18px;
 }
 
 /* Predicted price box styling */
 .stAlert {
-    background-color: white !important;
+    background-color: black !important;
     color: white !important;
     font-size: 20px !important;
+}
 }
 </style>
 """, unsafe_allow_html=True)
