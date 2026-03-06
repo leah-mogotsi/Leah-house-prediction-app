@@ -24,7 +24,7 @@ st.markdown("""
     background-color: rgba(255, 255, 255, 0.9); /* slightly transparent white */
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* subtle shadow for depth */
 }
 
 /* Button styling */
