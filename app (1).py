@@ -6,7 +6,7 @@ import numpy as np
 model = joblib.load("house_model.pkl")
 
 st.set_page_config(page_title="House Price Predictor", page_icon="🏠", layout="centered")
-
+st.markdown('<p style="color:white;">This text is white!</p>', unsafe_allow_html=True)
 st.markdown("""
 <style>
 div.stButton > button {
@@ -24,9 +24,10 @@ st.markdown(
     """
     <style>
     .block-container{
-        background-color: rgba(255,255,255,0.85);
+        background-color: rgba(30, 30, 30, 0.85);
         padding: 2rem;
         border-radius: 15px;
+
     }
     </style>
     """,
