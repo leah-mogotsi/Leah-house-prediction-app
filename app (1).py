@@ -5,30 +5,12 @@ import numpy as np
 
 model = joblib.load("house_model.pkl")
 
-st.set_page_config(page_title="House Price Predictor", page_icon="🏠", layout="centered")
+st.set_page_config(page_title="House Price Predictor", layout="centered")
 
 # General CSS for Streamlit app
 st.markdown("""
 <style>
 /* Fade background image slightly */
-.stApp {
-    background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Add a semi-transparent overlay behind content to fade the image */
-.stApp::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.6); /* light fade on image */
-    z-index: -1;
-}
 
 /* Make main content container slightly transparent */
 .block-container{
