@@ -21,7 +21,7 @@ st.markdown("""
 
 /* Make main content container slightly transparent */
 .block-container{
-    background-color: rgba(0, 0, 0, 0.6); /* darker and transparent */
+    background-color: #ffffff; 
     padding: 2rem;
     border-radius: 15px;
 }
@@ -29,7 +29,7 @@ st.markdown("""
 /* Button styling */
 div.stButton > button {
     background-color: #2E86C1;
-    color: white;
+    color: black;
     border-radius: 10px;
     height: 3em;
     width: 100%;
@@ -38,21 +38,21 @@ div.stButton > button {
 
 /* Slider text color */
 .css-1aumxhk input[type=range]::-webkit-slider-thumb {
-    background-color: white !important;
+    background-color: black !important;
 }
 .css-1aumxhk .css-1vv3m87 {
-    color: white !important;
+    color: black !important;
 }
 
 /* General text color and main body font size */
 h1, h2, h3, p, label, .stTextInput, .stSelectbox {
-    color: white !important;
+    color: black !important;
     font-size: 18px; /* Increase main body text size */
 }
 
 /* Predicted price box styling */
 .stAlert {
-    background-color: black !important;
+    background-color: white !important;
     color: white !important;
     font-size: 20px !important;
 }
