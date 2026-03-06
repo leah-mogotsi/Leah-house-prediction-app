@@ -18,6 +18,18 @@ st.markdown("""
     background-repeat: no-repeat;
 }
 
+/* Add a semi-transparent overlay behind content to fade the image */
+.stApp::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.6); /* light fade on image */
+    z-index: -1;
+}
+
 /* Make main content container slightly transparent */
 .block-container{
     background-color: rgba(255, 255, 255, 0.95); /* slightly transparent white */
