@@ -5,7 +5,52 @@ import numpy as np
 
 model = joblib.load("house_model.pkl")
 
+st.image("https://images.unsplash.com/photo-1600585154340-be6161a56a0c", use_column_width=True)
+
 st.set_page_config(page_title="House Price Predictor", page_icon="🏠", layout="centered")
+
+st.markdown("""
+<style>
+div.stButton > button {
+    background-color: #2E86C1;
+    color: white;
+    border-radius: 10px;
+    height: 3em;
+    width: 100%;
+    font-size:18px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <style>
+    .block-container{
+        background-color: rgba(255,255,255,0.85);
+        padding: 2rem;
+        border-radius: 15px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+def add_bg():
+    st.markdown(
+        """
+        <style>
+        .stApp {
+            background-image: url("https://images.unsplash.com/photo-1560518883-ce09059eeffa");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+add_bg()
 
 st.title("🏠 House Price Prediction App")
 st.write("Enter the house details below to estimate the price.")
@@ -17,13 +62,14 @@ st.subheader("📊 Property Details")
 col1, col2 = st.columns(2)
 
 with col1:
-    area = st.number_input("Area (sq ft)", min_value=0)
-    bedrooms = st.number_input("Bedrooms", min_value=0)
-    bathrooms = st.number_input("Bathrooms", min_value=0)
+    area = st.slider("Area (sq ft)", 500, 10000, 2000)
+    bedrooms = st.slider("Bedrooms", 1, 10, 3)
+    bathrooms = st.slider("Bathrooms", 1, 5, 2)
+
 
 with col2:
-    stories = st.number_input("Stories", min_value=0)
-    parking = st.number_input("Parking Spaces", min_value=0)
+    stories = st.slider("Stories", 1, 4, 2)
+    parking = st.slider("Parking Spaces", 0, 5, 1)
 
 st.divider()
 
